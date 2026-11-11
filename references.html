@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOALACT — UI Direction References</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#05090F;--bg2:#0A1120;--card:#101A2E;--line:rgba(255,255,255,.08);
+    --cyan:#00E5FF;--blue:#2E63F5;--txt:#F4F7FD;--txt2:#93A1B8;--live:#FF4D5E}
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
+  body{background:var(--bg);color:var(--txt);padding:48px 40px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1280px;margin:0 auto}
+  h1{font-size:30px;font-weight:800;letter-spacing:-.5px}
+  h1 span{color:var(--cyan)}
+  .sub{color:var(--txt2);margin-top:10px;font-size:14px;max-width:760px;line-height:1.65}
+  .hint{margin-top:14px;font-size:12px;color:var(--txt2);background:var(--card);border:1px solid var(--line);
+        border-radius:10px;padding:10px 14px;display:inline-block}
+  .dir{margin-top:56px}
+  .dirhead{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:14px;flex-wrap:wrap}
+  .dirhead h2{font-size:20px;font-weight:800}
+  .tag{font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--cyan);
+        border:1px solid rgba(0,229,255,.35);border-radius:99px;padding:4px 10px}
+  .tag.rec{color:#A3E635;border-color:rgba(163,230,53,.4)}
+  .dirhead p{color:var(--txt2);font-size:13px;margin-left:auto;max-width:520px;text-align:right;line-height:1.5}
+  .refblock{margin-top:26px}
+  .refhead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:12px}
+  .refhead h4{font-size:15px;font-weight:700}
+  .refhead p{color:var(--txt2);font-size:12px;margin-top:4px;line-height:1.5;max-width:640px}
+  .store{flex-shrink:0;font-size:11px;font-weight:700;color:var(--cyan);text-decoration:none;
+          border:1px solid var(--line);border-radius:8px;padding:6px 10px;background:var(--card)}
+  .shotrow{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px}
+  .shotrow img{height:340px;border-radius:14px;border:1px solid var(--line);flex-shrink:0;background:var(--card)}
+  .v2row{display:flex;gap:16px;flex-wrap:wrap}
+  .v2row figure{margin:0}
+  .v2row img{height:380px;border-radius:14px;border:1px solid var(--line);background:var(--card)}
+  .v2row .tall{height:auto;width:100%;max-width:1100px}
+  .v2row figcaption{font-size:11px;color:var(--txt2);margin-top:6px}
+  .kits{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:18px}
+  .kit{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;text-decoration:none;color:var(--txt)}
+  .kit h5{font-size:14px;font-weight:700}
+  .kit p{font-size:11px;color:var(--txt2);margin-top:6px;line-height:1.5}
+  .kit span{display:inline-block;margin-top:10px;font-size:11px;font-weight:700;color:var(--cyan)}
+  .ask{margin-top:56px;background:linear-gradient(135deg,#101A2E,#0B1428);border:1px solid var(--line);
+        border-radius:16px;padding:26px}
+  .ask h3{font-size:16px;font-weight:800}
+  .ask ol{margin:14px 0 0 20px;color:var(--txt2);font-size:13px;line-height:1.9}
+  .ask b{color:var(--txt)}
+  footer{margin:56px 0 20px;color:var(--txt2);font-size:11px}
+  ::-webkit-scrollbar{height:8px} ::-webkit-scrollbar-thumb{background:#22304d;border-radius:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>GOAL<span>ACT</span> — UI direction references</h1>
+  <p class="sub">Real apps worth showing the client, grouped by design direction. Click any screenshot to open it full-size. The question for the client: <b>which of these should GoalAct feel like?</b></p>
+  <p class="hint">Screenshots stream live from the App Store CDN — needs internet to render.</p>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag rec">Recommended</span><h2>A · Score-first broadcast</h2>
+      <p>Dark, dense, card-based. Built for the matchday loop: open app &rarr; see live score &rarr; check round &rarr; table. Our v2 already follows this pattern.</p>
+    </div>
+    
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>FotMob - Soccer Live Scores</h4><p>The benchmark. Look at: pinned score header, tabbed match centre (timeline/lineups/table), date-strip fixtures, form pills in standings.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/fotmob-soccer-live-scores/id488575683?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d5/e6/34/d5e63458-8860-ee38-0767-41a08a42ac30/01.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d5/e6/34/d5e63458-8860-ee38-0767-41a08a42ac30/01.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/43/35/2b43359c-5c02-9fb5-7382-c9eb160aab3b/02.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2b/43/35/2b43359c-5c02-9fb5-7382-c9eb160aab3b/02.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/14/03/0d14032c-413c-305e-6a03-13e27c42c247/03.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0d/14/03/0d14032c-413c-305e-6a03-13e27c42c247/03.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/1e/04/801e0498-c0c2-8a21-3e19-e1dddb03ceb6/04.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/80/1e/04/801e0498-c0c2-8a21-3e19-e1dddb03ceb6/04.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/54/12/2e/54122ed9-dc6c-5d0e-eda8-4258d18f0fca/05.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/54/12/2e/54122ed9-dc6c-5d0e-eda8-4258d18f0fca/05.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/89/44/568944ce-e441-a4b1-c3f0-9fda394f3022/06.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/56/89/44/568944ce-e441-a4b1-c3f0-9fda394f3022/06.png/0x0ss.jpg" loading="lazy" alt="FotMob - Soccer Live Scores"></a></div>
+    </div>
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>Sofascore: Live Sports Scores</h4><p>Same genre, heavier stats. Look at: how much density is too much — useful boundary marker for the client conversation.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/sofascore-live-sports-scores/id1176147574?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/89/82/6689824d-6fdd-2c37-799c-d9e9b0d43b1c/EN-US_General_screenshots-6_9_-01.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/66/89/82/6689824d-6fdd-2c37-799c-d9e9b0d43b1c/EN-US_General_screenshots-6_9_-01.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/dc/be/b9dcbe07-50f8-c33a-94c1-22a0a6ab397d/EN-US_General_screenshots-6_9_-02.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b9/dc/be/b9dcbe07-50f8-c33a-94c1-22a0a6ab397d/EN-US_General_screenshots-6_9_-02.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/81/5b/43/815b435a-bc61-e789-fb94-2100a62a7961/EN-US_General_screenshots-6_U00279_-03.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/81/5b/43/815b435a-bc61-e789-fb94-2100a62a7961/EN-US_General_screenshots-6_U00279_-03.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/41/c0/8941c039-a18c-bc19-44fb-f2295da0709e/EN-US_General_screenshots-6_9_-04.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/41/c0/8941c039-a18c-bc19-44fb-f2295da0709e/EN-US_General_screenshots-6_9_-04.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/be/d8/b7bed828-70e1-7a56-0cb3-37f41ae13533/EN-US_General_screenshots-6_9_-05.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b7/be/d8/b7bed828-70e1-7a56-0cb3-37f41ae13533/EN-US_General_screenshots-6_9_-05.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/0a/d5/c60ad532-22a2-9ef1-1a17-d941be1ae88e/EN-US_General_screenshots-6_9_-06.jpg/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/c6/0a/d5/c60ad532-22a2-9ef1-1a17-d941be1ae88e/EN-US_General_screenshots-6_9_-06.jpg/0x0ss.jpg" loading="lazy" alt="Sofascore: Live Sports Scores"></a></div>
+    </div>
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>Flashscore: Live Scores & News</h4><p>The pure list-scanner. Look at: result rows and grouping; minimal chrome, maximum speed.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/flashscore-live-scores-news/id766443283?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/70/86/4f7086c8-60eb-7253-c5d6-4e4d251032f2/1.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4f/70/86/4f7086c8-60eb-7253-c5d6-4e4d251032f2/1.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/fc/d0/f3fcd03f-8af7-3217-e8c3-c0e010a3a686/2.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f3/fc/d0/f3fcd03f-8af7-3217-e8c3-c0e010a3a686/2.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/ff/dc/fcffdc87-68a7-f3e1-17db-6832830f9b88/3.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fc/ff/dc/fcffdc87-68a7-f3e1-17db-6832830f9b88/3.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/2e/f8/eb2ef826-c020-8b8a-2ecb-119b45a26173/4.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/eb/2e/f8/eb2ef826-c020-8b8a-2ecb-119b45a26173/4.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/62/a1/2f/62a12f61-9616-8188-946b-75d86dd44493/5.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/62/a1/2f/62a12f61-9616-8188-946b-75d86dd44493/5.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/10/4b/58104b7e-8287-730f-3584-589bf43414ef/6.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/58/10/4b/58104b7e-8287-730f-3584-589bf43414ef/6.png/0x0ss.jpg" loading="lazy" alt="Flashscore: Live Scores & News"></a></div>
+    </div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag">Media layer</span><h2>B · Editorial / video-first</h2>
+      <p>Magazine feed, big thumbnails, polls. Don't redesign the whole app this way — steal it for the Videos, News and Goal-of-the-Week surfaces.</p>
+    </div>
+    
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>OneFootball Live Soccer scores</h4><p>Look at: feed cards with big imagery, poll/vote cards (maps to our GOTW), short-form video rows, player profile tabs.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/onefootball-live-soccer-scores/id382002079?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/78/cd/bc/78cdbc04-9913-b1d8-d9dc-99e5b2cec241/fd8ed834-c03e-4855-9571-94e78fe5f9f6_EN.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/78/cd/bc/78cdbc04-9913-b1d8-d9dc-99e5b2cec241/fd8ed834-c03e-4855-9571-94e78fe5f9f6_EN.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/09/88/5f0988cc-7b57-4707-68bc-019172ea11ad/28ce19a3-6be8-4555-a307-6aa311402827_5.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5f/09/88/5f0988cc-7b57-4707-68bc-019172ea11ad/28ce19a3-6be8-4555-a307-6aa311402827_5.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/07/9e/51079e45-4771-97c2-36a8-53823a9adf92/7e765568-7804-4fd1-ba0e-e3f756805cff_4.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/07/9e/51079e45-4771-97c2-36a8-53823a9adf92/7e765568-7804-4fd1-ba0e-e3f756805cff_4.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/f9/03/27f90392-01d5-97f5-11ac-4d89190c2fcc/bfc07af3-27e6-4eb3-bb91-e0dbab41c4d2_2.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/27/f9/03/27f90392-01d5-97f5-11ac-4d89190c2fcc/bfc07af3-27e6-4eb3-bb91-e0dbab41c4d2_2.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/d6/00/9bd600a2-6bbd-e0c6-2266-e9517f44fb72/14bdf541-6274-4b45-a776-fcc217e1eb18_7.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9b/d6/00/9bd600a2-6bbd-e0c6-2266-e9517f44fb72/14bdf541-6274-4b45-a776-fcc217e1eb18_7.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/eb/3d/35eb3d2e-b916-1469-5afc-c64f70c0859c/91bacf6e-3232-4ad8-80e9-50981631a634_1.png/0x0ss.png" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/eb/3d/35eb3d2e-b916-1469-5afc-c64f70c0859c/91bacf6e-3232-4ad8-80e9-50981631a634_1.png/0x0ss.png" loading="lazy" alt="OneFootball Live Soccer scores"></a></div>
+    </div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag">Contrast option</span><h2>C · Minimal typographic</h2>
+      <p>Apple's take: plain rows, huge numerals, near-zero chrome. Useful as the "less is more" anchor — cheapest to build, least league identity.</p>
+    </div>
+    
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>Apple Sports</h4><p>Look at: typographic score rows, restrained colour, how little UI is needed to scan a whole round.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/apple-sports/id6446788829?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/4c/b2/614cb216-6406-2f02-30a9-427f668fba97/Sports-iPhone6p9-iOS26-USEN-Wrapper1.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/61/4c/b2/614cb216-6406-2f02-30a9-427f668fba97/Sports-iPhone6p9-iOS26-USEN-Wrapper1.png/0x0ss.jpg" loading="lazy" alt="Apple Sports"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/93/78/bc9378cf-f321-0649-e2b8-b079a8e008ba/Sports-iPhone6p9-iOS26-USEN-Wrapper2.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bc/93/78/bc9378cf-f321-0649-e2b8-b079a8e008ba/Sports-iPhone6p9-iOS26-USEN-Wrapper2.png/0x0ss.jpg" loading="lazy" alt="Apple Sports"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/c7/23/79c72328-d9e5-5200-9bd5-daf7c09bd1bc/Sports-iPhone6p9-iOS26-USEN-Wrapper3.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/79/c7/23/79c72328-d9e5-5200-9bd5-daf7c09bd1bc/Sports-iPhone6p9-iOS26-USEN-Wrapper3.png/0x0ss.jpg" loading="lazy" alt="Apple Sports"></a></div>
+    </div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag">Alternate feel</span><h2>D · League-official</h2>
+      <p>What an official league app looks like: photography, club identity, editorial home. The alternative if the client wants "our league's own product" over a score app.</p>
+    </div>
+    
+    <div class="refblock">
+      <div class="refhead">
+        <div><h4>Premier League - Scores, News</h4><p>Look at: hero imagery, club colour usage, content-first home. Heavier to produce — needs real photography.</p></div>
+        <a class="store" href="https://apps.apple.com/us/app/premier-league-scores-news/id1138895159?uo=4" target="_blank">App Store &#8599;</a>
+      </div>
+      <div class="shotrow"><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/28/b0/b528b039-fb85-eb0d-7891-53c53feb438d/myPL_1290x2796px_6pt9Display_AppleAppStore_06.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b5/28/b0/b528b039-fb85-eb0d-7891-53c53feb438d/myPL_1290x2796px_6pt9Display_AppleAppStore_06.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/25/0b/66250bd7-11ed-d0a3-c516-3e2da66c4ba2/myPL_1290x2796px_6pt9Display_AppleAppStore_07.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/66/25/0b/66250bd7-11ed-d0a3-c516-3e2da66c4ba2/myPL_1290x2796px_6pt9Display_AppleAppStore_07.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/ee/73/48ee73b1-a9b1-3488-2be9-3d8333cffa1d/myPL_1290x2796px_6pt9Display_AppleAppStore_01.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/48/ee/73/48ee73b1-a9b1-3488-2be9-3d8333cffa1d/myPL_1290x2796px_6pt9Display_AppleAppStore_01.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/e8/84/84e88471-0377-fefb-27eb-12e89dcf43ed/myPL_1290x2796px_6pt9Display_AppleAppStore_09.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/84/e8/84/84e88471-0377-fefb-27eb-12e89dcf43ed/myPL_1290x2796px_6pt9Display_AppleAppStore_09.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/51/51/d8515172-340d-72ce-88f1-8aa0bccbd76f/myPL_1290x2796px_6pt9Display_AppleAppStore_03.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/51/51/d8515172-340d-72ce-88f1-8aa0bccbd76f/myPL_1290x2796px_6pt9Display_AppleAppStore_03.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a><a href="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/10/7a/4e/107a4ed9-ad84-5c12-540c-e3ea1e53a245/myPL_2752x2064px_iPad_AppleAppStore_02.png/0x0ss.jpg" target="_blank"><img src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/10/7a/4e/107a4ed9-ad84-5c12-540c-e3ea1e53a245/myPL_2752x2064px_iPad_AppleAppStore_02.png/0x0ss.jpg" loading="lazy" alt="Premier League - Scores, News"></a></div>
+    </div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag">Ours</span><h2>GoalAct v2 mockups</h2>
+      <p>Current redesign preview — direction A. For direct comparison against the references above.</p>
+    </div>
+    <div class="refblock">
+      <div class="v2row">
+        <figure><img src="home-v2.png" alt="Home v2"><figcaption>Home v2 — live match pinned, today's fixtures, mini standings</figcaption></figure>
+        <figure style="flex:1;min-width:320px"><img class="tall" src="board-v2.png" alt="Board v2"><figcaption>Board v2 — matches, match detail, standings, team, player</figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="dir">
+    <div class="dirhead">
+      <span class="tag">Figma</span><h2>Duplicable community kits</h2>
+      <p>Open in browser &rarr; "Open in Figma" &rarr; duplicate. Usable as a real starting file, not just inspiration.</p>
+    </div>
+    <div class="kits">
+      <a class="kit" href="https://www.figma.com/community/file/1237711018456644474/live-score-app-ui-kit" target="_blank"><h5>Live Score App UI Kit</h5><p>Dark mode, full auto-layout components &amp; variants — closest genre match to GoalAct.</p><span>Open in Figma &#8599;</span></a>
+      <a class="kit" href="https://www.figma.com/community/file/1346448737297815031/soccer-score-app" target="_blank"><h5>Soccer Score App</h5><p>2.6k-user template for a football score app.</p><span>Open in Figma &#8599;</span></a>
+      <a class="kit" href="https://www.figma.com/community/file/1536585643227957789/kickster-live-score-news-sport-apps-ui-kits" target="_blank"><h5>Kickster — Score &amp; News</h5><p>Minimal modern kit that includes news screens — covers the media side too.</p><span>Open in Figma &#8599;</span></a>
+      <a class="kit" href="https://www.figma.com/community/file/1197453857240691089/livesoccer-live-score-mobile-app" target="_blank"><h5>Livesoccer</h5><p>Live score mobile app community file.</p><span>Open in Figma &#8599;</span></a>
+      <a class="kit" href="https://www.figma.com/community/file/1564992156703237015/live-score-skoora-interactive-sports-ui-design" target="_blank"><h5>Skoora</h5><p>Interactive sports UI design.</p><span>Open in Figma &#8599;</span></a>
+      <a class="kit" href="https://mobbin.com/collections/041fe8e5-792f-4b66-b0b9-b4f7411d09cf/mobile/screens" target="_blank"><h5>Mobbin — scoreboard collection</h5><p>Real production screens: scores, standings, live stats patterns.</p><span>Browse &#8599;</span></a>
+    </div>
+  </div>
+
+  <div class="ask">
+    <h3>The one question for the client</h3>
+    <ol>
+      <li><b>A — FotMob-style</b> (scores first, dark): fastest path, matches v2, expected pattern.</li>
+      <li><b>D — League-official</b>: more identity, more content production cost.</li>
+      <li><b>C — Apple Sports minimal</b>: cheapest, least distinctive.</li>
+    </ol>
+    <p style="margin-top:12px;font-size:12px;color:var(--txt2)">Whichever they pick, B (OneFootball-style cards) applies to Videos / News / Goal of the Week regardless.</p>
+  </div>
+
+  <footer>Screenshots: Apple App Store CDN (mzstatic) · GoalAct v2: design-preview/ · Generated for client reference review.</footer>
+</div>
+</body>
+</html>
